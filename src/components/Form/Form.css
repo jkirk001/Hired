@@ -1,0 +1,14 @@
+.Contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+}
+.ContactInfo {
+  width: 50%;
+  min-width: 358px;
+}
+.ContactForm {
+  width: 50%;
+  min-width: 358px;
+}
