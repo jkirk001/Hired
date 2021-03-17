@@ -1,0 +1,17 @@
+.Nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+}
+.Logo {
+  margin: 0;
+  border: 2px solid #a9d6e5;
+  padding: 10px;
+  border-radius: 25% 10%;
+}
+.Hire {
+  text-decoration: none;
+  color: #a9d6e5;
+}

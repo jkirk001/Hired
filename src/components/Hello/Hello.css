@@ -1,0 +1,37 @@
+.Hello {
+  margin-top: 12%;
+}
+.Hello strong {
+  font-size: 3.5rem;
+  color: #468faf;
+}
+.Hello h1 {
+  font-size: 5.5rem;
+  color: #2a6f97;
+}
+.Hello p {
+  font-size: 2.5rem;
+  color: #61a5c2;
+}
+@media (max-width: 992px) {
+  .Hello strong {
+    font-size: 2.3rem;
+  }
+  .Hello h1 {
+    font-size: 4rem;
+  }
+  .Hello p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .Hello strong {
+    font-size: 1.8rem;
+  }
+  .Hello h1 {
+    font-size: 3.2rem;
+  }
+  .Hello p {
+    font-size: 1.3rem;
+  }
+}
