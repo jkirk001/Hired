@@ -3,12 +3,42 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 90%;
+  margin-bottom: 20px;
 }
 .ContactInfo {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 46%;
   min-width: 358px;
+  border: 1px solid white;
 }
+.ContactInfo h4 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.ContactTargetList address {
+  margin-bottom: 10px;
+}
+.ContactTargetList {
+  margin-bottom: 10px;
+}
+.ContactInfoTarget a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #a9d6e5;
+  font-weight: bold;
+}
+.ContactInfoTarget a span {
+  margin-left: 10px;
+}
+
 .ContactForm {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 46%;
   min-width: 358px;
+  border: 1px solid white;
 }
