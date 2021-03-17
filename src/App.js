@@ -2,7 +2,7 @@ import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Hello from "./components/Hello/Hello";
 import Tech from "./components/Tech/Tech";
-import Form from "./components/Form/Form";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Nav />
         <Hello />
         <Tech />
-        <Form />
+        <Contact />
       </div>
     </div>
   );
