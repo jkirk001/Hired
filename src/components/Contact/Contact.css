@@ -5,12 +5,3 @@
   width: 90%;
   margin-bottom: 20px;
 }
-
-.ContactForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 46%;
-  min-width: 358px;
-  border: 1px solid white;
-}

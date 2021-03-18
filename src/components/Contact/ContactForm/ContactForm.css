@@ -6,3 +6,35 @@
   min-width: 358px;
   border: 1px solid white;
 }
+.ContactForm h4 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.InputDiv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.InputDiv label {
+  margin-left: 10px;
+}
+
+.InputDiv input,
+.InputDiv textarea {
+  outline: none;
+  border: 2px solid #a9d6e5;
+  border-radius: 6px;
+  background-color: black;
+  height: 20px;
+  color: #a9d6e5;
+  padding: 5px 2px;
+  transition: 0.5s;
+}
+
+.InputDiv input:focus,
+.InputDiv textarea:focus {
+  border: 2px solid pink;
+  color: pink;
+}
