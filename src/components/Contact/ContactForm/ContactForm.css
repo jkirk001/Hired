@@ -1,14 +1,35 @@
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(162, 194, 205);
+  opacity: 0.7; /* Firefox */
+}
 .ContactForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 46%;
   min-width: 358px;
-  border: 1px solid white;
 }
 .ContactForm h4 {
+  color: #468faf;
   font-size: 3rem;
   margin: 2rem 0;
+}
+.ContactForm button {
+  width: 90%;
+  border: 2px solid #a9d6e5;
+  border-radius: 6px;
+  background-color: black;
+  color: #a9d6e5;
+  outline: none;
+  transition: 0.7s;
+}
+.ContactForm button:hover {
+  border: 2px solid pink;
+  color: pink;
+}
+.ContactForm button:focus {
+  animation: wiggle 1s ease;
 }
 
 .InputDiv {
@@ -19,22 +40,44 @@
 
 .InputDiv label {
   margin-left: 10px;
+  margin-bottom: 10px;
 }
-
+.InputDiv textarea {
+  overflow: hidden;
+  height: 200px;
+}
 .InputDiv input,
 .InputDiv textarea {
   outline: none;
   border: 2px solid #a9d6e5;
   border-radius: 6px;
   background-color: black;
-  height: 20px;
   color: #a9d6e5;
-  padding: 5px 2px;
+  padding: 12px 7px;
   transition: 0.5s;
+  margin-bottom: 20px;
 }
 
 .InputDiv input:focus,
 .InputDiv textarea:focus {
   border: 2px solid pink;
   color: pink;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

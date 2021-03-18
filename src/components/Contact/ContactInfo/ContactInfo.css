@@ -1,17 +1,20 @@
 .ContactInfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+
   width: 46%;
   min-width: 358px;
-  border: 1px solid white;
 }
 .ContactInfo h4 {
+  letter-spacing: 5px;
+  color: #2a6f97;
   font-size: 3rem;
   margin: 2rem 0;
 }
 .ContactTargetList address {
   margin-bottom: 10px;
+  font-size: 1.7rem;
 }
 .ContactTargetList {
   margin-bottom: 10px;
@@ -24,5 +27,6 @@
   font-weight: bold;
 }
 .ContactInfoTarget a span {
+  font-size: 1.3rem;
   margin-left: 10px;
 }
