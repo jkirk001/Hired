@@ -2,5 +2,10 @@
   width: 98%;
   padding: 3rem 1rem;
   display: flex;
+  text-align: center;
   justify-content: space-between;
+  margin-top: 3rem;
+}
+.Footer span {
+  width: 200px;
 }

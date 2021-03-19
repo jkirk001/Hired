@@ -4,10 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ModeContextProvider from "./context/mode-context";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <ModeContextProvider>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </ModeContextProvider>,
   document.getElementById("root")
 );
