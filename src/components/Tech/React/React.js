@@ -1,7 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSpring, animated as a } from "react-spring";
 
 const ReactTech = (props) => {
+  const [tech, setTech] = useState({});
+  useEffect(() => {
+    fetch("https://hired-224da-default-rtdb.firebaseio.com/tech.json")
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((resData) => {
+        console.log(resData.react);
+        setTech(resData.react);
+      });
+  }, []);
+
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
@@ -24,9 +37,9 @@ const ReactTech = (props) => {
         }}
       >
         <span>
-          <img alt="React" src="/react.svg" />
+          <img alt="React" src={tech.img} />
         </span>
-        <h4>React</h4>
+        <h4>{tech.name}</h4>
         <div className="Skills">
           <article>
             <span
@@ -36,12 +49,10 @@ const ReactTech = (props) => {
                 fontSize: "1.2rem",
               }}
             >
-              How did I just send 4,231 GET requests on render?
+              {tech.quip}
             </span>
             <span style={{ display: "block", marginLeft: "3rem" }}>
-              React allows us to build highly responsive UIs which can maintain
-              a state across pages. Alongside tools like Redux and react-spring
-              nearly anything can be accomplished.
+              {tech.body}
             </span>
           </article>
         </div>
