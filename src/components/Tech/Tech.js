@@ -11,9 +11,8 @@ const Tech = (props) => {
     <section className="Tech">
       <h3>Technologies</h3>
       <ul className="TechList">
-        <li className="TechListItem">
-          <ReactTech />
-        </li>
+        <ReactTech />
+
         <li className="TechListItem">
           <NodeTech />
         </li>

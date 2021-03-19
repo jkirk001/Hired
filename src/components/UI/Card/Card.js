@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useSpring, animated as a } from "react-spring";
 import "./Card.css";
+import ReactTech from "../../Tech/React/React";
 
-function Card() {
+function Card(props) {
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
@@ -12,11 +13,13 @@ function Card() {
   return (
     <div onClick={() => set((state) => !state)}>
       <a.div
-        class="c back"
+        className="c back"
         style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}
-      />
+      >
+        <ReactTech />
+      </a.div>
       <a.div
-        class="c front"
+        className="c front"
         style={{
           opacity,
           transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
@@ -27,3 +30,23 @@ function Card() {
 }
 
 export default Card;
+/*
+<li className="TechListItem">
+          <ReactTech />
+        </li>
+        <li className="TechListItem">
+          <NodeTech />
+        </li>
+        <li className="TechListItem">
+          <JavascriptTech />
+        </li>
+        <li className="TechListItem">
+          <MongoTech />
+        </li>
+        <li className="TechListItem">
+          <ExpressTech />
+        </li>
+        <li className="TechListItem">
+          <NextTech />
+        </li>
+*/

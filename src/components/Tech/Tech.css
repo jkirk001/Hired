@@ -43,3 +43,15 @@
 .Skills article {
   height: 180px;
 }
+.c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+
+.front,
+.back {
+  background-size: cover;
+}
