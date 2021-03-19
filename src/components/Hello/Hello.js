@@ -3,16 +3,14 @@ import "./Hello.css";
 const Hello = (props) => {
   return (
     <section className="Hello">
-      <strong>Wasaa, I'm Jon</strong>
+      <strong>Hey, I'm Jon (Evron)</strong>
       <h1>Looking for a Developer?</h1>
       <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
+        I am a reliable fullstack developer, with a focus on Javascript and
+        Node.js. On the frontend, React is my library/framework of choice; on
+        the back I often use Firebase, but I also enjoy Express with MongoDB. I
+        am looking to join a motivated team with clear goals, where I can not
+        only work - but learn.
       </p>
     </section>
   );

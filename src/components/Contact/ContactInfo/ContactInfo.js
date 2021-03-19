@@ -4,7 +4,7 @@ import { ModeContext } from "../../../context/mode-context";
 
 const ContactInfo = (props) => {
   const modeContext = useContext(ModeContext);
-  const [email, setEmail] = useState("Jone.kirkpatrick@gmail.com");
+  const [email] = useState("Jone.kirkpatrick@gmail.com");
   return (
     <div className="ContactInfo">
       <h4>Reach Out</h4>
@@ -16,6 +16,7 @@ const ContactInfo = (props) => {
         >
           <address>{email}</address>
           <img
+            alt="click to copy"
             onClick={() => {
               navigator.clipboard.writeText(email);
             }}

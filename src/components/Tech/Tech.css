@@ -40,3 +40,6 @@
   display: flex;
   justify-content: center;
 }
+.Skills article {
+  height: 180px;
+}
