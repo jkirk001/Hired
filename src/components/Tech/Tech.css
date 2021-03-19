@@ -1,16 +1,23 @@
 .Tech {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+.Tech h3 {
+  color: #2a6f97;
+  font-size: 4rem;
+  margin-bottom: 6rem;
 }
 .TechList {
   width: 100%;
   padding-left: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 

@@ -1,25 +1,9 @@
-.Nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 160px;
-}
-.Logo {
-  font-size: 4rem;
-  margin: 0;
-  border: 2px solid #a9d6e5;
-  padding: 10px;
-  border-radius: 25% 10%;
-}
-
-.Hire {
+.HireLight {
   text-decoration: none;
-  color: #a9d6e5;
+  color: #2a6f97;
   border: 2px solid #2a6f97;
   border-radius: 5px;
   padding: 1rem;
-
   animation: glow 10s ease-in-out 5s infinite;
 }
 

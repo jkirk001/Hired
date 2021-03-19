@@ -12,9 +12,32 @@
   font-size: 3rem;
   margin: 2rem 0;
 }
+.ContactEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.ContactEmailLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8ff;
+}
+.ContactEmail img,
+.ContactEmailLight img {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.ContactEmail img:hover,
+.ContactEmailLight img:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
 .ContactTargetList address {
-  margin-bottom: 10px;
-  font-size: 1.7rem;
+  padding: 20px;
+  font-size: 1.2rem;
 }
 .ContactTargetList {
   margin-bottom: 10px;

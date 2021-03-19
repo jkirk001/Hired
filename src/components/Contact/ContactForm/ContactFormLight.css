@@ -1,9 +1,4 @@
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(140, 181, 194);
-  opacity: 0.7; /* Firefox */
-}
-.ContactForm {
+.ContactFormLight {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,75 +6,56 @@
   min-width: 358px;
   height: 600px;
 }
-.ContactForm h4 {
+.ContactFormLight h4 {
   color: #468faf;
   font-size: 3rem;
   margin: 2rem 0;
 }
-.ContactForm button {
+.ContactFormLight button {
   width: 90%;
   border: 2px solid #a9d6e5;
   border-radius: 6px;
-  background-color: black;
+  background-color: #f8f8ff;
   color: #a9d6e5;
   outline: none;
   transition: 0.7s;
 }
-
-.ContactForm button:hover {
+.ContactFormLight button:hover {
   border: 2px solid pink;
   color: pink;
 }
-.ContactForm button:focus {
+.ContactFormLight button:focus {
   animation: wiggle 1s ease;
 }
 
-.InputDiv {
+.InputDivLight {
   display: flex;
   flex-direction: column;
   width: 90%;
 }
 
-.InputDiv label {
+.InputDivLight label {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-.InputDiv textarea {
+.InputDivLight textarea {
   overflow: hidden;
   height: 200px;
 }
-.InputDiv input,
-.InputDiv textarea {
+
+.InputDivLight input,
+.InputDivLight textarea {
   outline: none;
   border: 2px solid #a9d6e5;
   border-radius: 6px;
-  background-color: black;
+  background-color: #f8f8ff;
   color: #a9d6e5;
   padding: 12px 7px;
   transition: 0.5s;
   margin-bottom: 20px;
 }
-
-.InputDiv input:focus,
-.InputDiv textarea:focus {
+.InputDivLight input:focus,
+.InputDivLight textarea:focus {
   border: 2px solid pink;
-  color: pink;
-}
-
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(-3deg);
-  }
-  75% {
-    transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  color: rgb(220, 125, 141);
 }
