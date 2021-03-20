@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSpring, animated as a } from "react-spring";
+//import TechBack from "./TechBack";
 
 const TechItem = (props) => {
   const [flipped, set] = useState(false);
@@ -13,15 +14,6 @@ const TechItem = (props) => {
       <a.div
         className="c back"
         style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}
-      >
-        Test
-      </a.div>
-      <a.div
-        className="c front"
-        style={{
-          opacity,
-          transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
-        }}
       >
         <span>
           <img alt="React" src={props.tech.img} />
@@ -44,6 +36,13 @@ const TechItem = (props) => {
           </article>
         </div>
       </a.div>
+      <a.div
+        className="c front"
+        style={{
+          opacity,
+          transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+        }}
+      />
     </li>
   );
 };

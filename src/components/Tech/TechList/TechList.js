@@ -6,7 +6,6 @@ const TechList = (props) => {
   useEffect(() => {
     fetch("https://hired-224da-default-rtdb.firebaseio.com/tech.json")
       .then((res) => {
-        console.log(res);
         return res.json();
       })
       .then((resData) => {
