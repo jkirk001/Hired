@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import { useContext } from "react";
 import { ModeContext } from "./context/mode-context";
@@ -5,6 +6,10 @@ import { Route, Switch } from "react-router-dom";
 import Main from "./components/Main/Main";
 
 function App() {
+  useEffect(() => {
+    document.title = "Available";
+  }, []);
+
   const modeContext = useContext(ModeContext);
   return (
     <div className={modeContext.lightMode ? "AppLight" : "App"}>
