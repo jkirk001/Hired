@@ -9,6 +9,7 @@ const TechItem = (props) => {
     transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
     config: { mass: 5, tension: 400, friction: 30 },
   });
+
   return (
     <li className="TechListItem" onClick={() => set((state) => !state)}>
       <a.div
@@ -41,6 +42,7 @@ const TechItem = (props) => {
         style={{
           opacity,
           transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
+          backgroundImage: `url(${props.tech.back})`,
         }}
       />
     </li>
