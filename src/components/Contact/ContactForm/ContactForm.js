@@ -1,6 +1,6 @@
 import "./ContactForm.css";
 import "./ContactFormLight.css";
-import { Fragment, useState, useContext } from "react";
+import { Fragment, useState, useContext, useEffect } from "react";
 import { ModeContext } from "../../../context/mode-context";
 
 const ContactForm = (props) => {
@@ -10,6 +10,22 @@ const ContactForm = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    if (localStorage.getItem("dateResumeSent-Evron.dev")) {
+      let oldDate = localStorage.getItem("dateResumeSent-Evron.dev");
+      // prettier-ignore
+      let oldDateNew = parseInt(oldDate) + (2 * 60 * 1000);
+
+      if (oldDateNew < Date.now()) {
+        setFormSent(false);
+        localStorage.removeItem("dateResumeSent-Evron.dev");
+      } else {
+        setFormSent(true);
+      }
+    }
+    return console.log("nothing");
+  }, []);
 
   const inputHandler = (event) => {
     if (event.target.id === "name") setName(event.target.value);
@@ -27,6 +43,7 @@ const ContactForm = (props) => {
       setEmail("");
       setMessage("");
       setTimeout(() => {
+        localStorage.setItem("dateResumeSent-Evron.dev", Date.now());
         setFormSent(true);
       }, 1200);
     });
