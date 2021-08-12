@@ -1,0 +1,93 @@
+.Port {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  margin-bottom: 6rem;
+}
+.Port h3 {
+  color: #2a6f97;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  grid-column: span 2;
+  justify-self: center;
+}
+.Container {
+  display: grid;
+}
+.Container a {
+  width: 450px;
+  height: 400px;
+  justify-self: center;
+}
+
+.Image {
+  background-image: url('https://res.cloudinary.com/dxtqihvgt/image/upload/v1628800252/AP_uz9n1i.jpg');
+  background-position: center center;
+  background-size: cover;
+  width: 450px;
+  height: 400px;
+  justify-self: center;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 3px grey;
+}
+.Image2 {
+  background-image: url('https://res.cloudinary.com/dxtqihvgt/image/upload/v1628800277/blog_u8ncov.jpg');
+  background-position: center center;
+  background-size: cover;
+  width: 450px;
+  height: 400px;
+  justify-self: center;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 3px grey;
+}
+.Image3 {
+  background-image: url('https://res.cloudinary.com/dxtqihvgt/image/upload/v1628800280/evron_qudk4v.jpg');
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  justify-self: center;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 3px grey;
+  margin-top: 20px;
+}
+
+@media (max-width: 997px) {
+  .Port {
+    grid-template-columns: 1fr;
+  }
+  .Port h3 {
+    grid-column: span 1;
+  }
+  .Image,
+  .Image2,
+  .Image3,
+  .Container a {
+    margin: 0;
+  }
+}
+
+@media (max-width: 510px) {
+  .Image,
+  .Image2,
+  .Image3,
+  .Container a {
+    width: 300px;
+    height: 277px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 337px) {
+  .Image,
+  .Image2,
+  .Image3,
+  .Container a {
+    width: 280px;
+    height: 260px;
+    margin: 0;
+  }
+}
